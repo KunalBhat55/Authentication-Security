@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 mongoose
   .connect(process.env.MONGO_URL_01, { useUnifiedTopology: true })
-  .then((result) => {
+  .then(() => {
     console.log("Connected to MongoDB passport users");
   })
   .catch((err) => {
